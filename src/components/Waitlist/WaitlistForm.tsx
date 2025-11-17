@@ -129,7 +129,7 @@ const WaitlistForm: React.FC = () => {
 
                     if (field.type === 'textarea') {
                         return (
-                            <div key={field.id} className="grid grid-cols-[120px_1fr] gap-4 items-start">
+                            <div key={field.id} className="grid grid-cols-[80px_1fr] md:grid-cols-[120px_1fr] gap-4 items-start">
                                 <label htmlFor={field.id} className="text-sm font-medium text-slate-700 pt-2 text-left">
                                     {field.label}
                                 </label>
@@ -147,7 +147,7 @@ const WaitlistForm: React.FC = () => {
                     }
 
                     return (
-                        <div key={field.id} className="grid grid-cols-[120px_1fr] gap-4 items-center">
+                        <div key={field.id} className="grid grid-cols-[80px_1fr] md:grid-cols-[120px_1fr] gap-4 items-center">
                             <label htmlFor={field.id} className="text-sm font-medium text-slate-700 text-left">
                                 {field.label}
                             </label>
@@ -167,7 +167,7 @@ const WaitlistForm: React.FC = () => {
                 <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-md hover:bg-indigo-700 transition text-base md:text-lg flex justify-center items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-md hover:bg-indigo-700 transition text-sm md:text-lg flex justify-center items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                     {isSubmitting ? (
                         <>

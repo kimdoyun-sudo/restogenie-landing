@@ -124,7 +124,7 @@ const Hero: React.FC = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 max-w-4xl mx-auto leading-[1.15] mb-6"
+                        className="text-3xl md:text-5xl lg:text-6xl font-black text-slate-900 max-w-4xl mx-auto leading-[1.15] mb-6"
                         style={{ fontFamily: 'var(--font-display)', wordBreak: 'keep-all' }}
                     >
                         {heroDetails.heading.split('\n').map((line, index) => (
@@ -144,7 +144,7 @@ const Hero: React.FC = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="text-base md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium"
+                        className="text-sm md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium"
                     >
                         {heroDetails.subheading.split('\n').map((line, index) => (
                             <React.Fragment key={index}>
@@ -163,7 +163,7 @@ const Hero: React.FC = () => {
                     >
                         <a
                             href={heroDetails.ctaUrl}
-                            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#FA8823] to-[#FF6B35] text-white font-bold py-4 px-8 rounded-full text-base md:text-lg hover:from-[#FF6B35] hover:to-[#FA8823] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
+                            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#FA8823] to-[#FF6B35] text-white font-bold py-4 px-8 rounded-full text-sm md:text-lg hover:from-[#FF6B35] hover:to-[#FA8823] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
                         >
                             {heroDetails.ctaText}
                         </a>

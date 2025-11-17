@@ -17,7 +17,7 @@ const FAQ: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-2xl md:text-4xl font-bold text-slate-900 text-center mb-12 md:mb-16"
+                    className="text-xl md:text-4xl font-bold text-slate-900 text-center mb-12 md:mb-16"
                 >
                     자주 묻는 질문
                 </motion.h2>
@@ -41,7 +41,7 @@ const FAQ: React.FC = () => {
                                         }`}
                                     >
                                         <DisclosureButton className="flex items-start justify-between w-full p-6 text-left group">
-                                            <span className="text-lg md:text-xl font-bold text-slate-900 pr-8 group-hover:text-indigo-600 transition-colors duration-300">
+                                            <span className="text-base md:text-xl font-bold text-slate-900 pr-8 group-hover:text-indigo-600 transition-colors duration-300">
                                                 {faq.question}
                                             </span>
                                             <div

@@ -35,7 +35,7 @@ const Problem: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-2xl md:text-4xl font-bold text-slate-900 text-center mb-12 md:mb-16"
+                    className="text-xl md:text-4xl font-bold text-slate-900 text-center mb-12 md:mb-16"
                 >
                     {problemSection.title}
                 </motion.h2>
@@ -71,7 +71,7 @@ const Problem: React.FC = () => {
                                         </div>
                                     )}
 
-                                    <h3 className="text-lg md:text-xl font-bold mb-2 text-slate-900">
+                                    <h3 className="text-base md:text-xl font-bold mb-2 text-slate-900">
                                         {problem.title}
                                     </h3>
                                     <p className="text-sm md:text-base text-slate-600 mb-3">

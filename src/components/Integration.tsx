@@ -68,13 +68,13 @@ const IntegrationCard: React.FC<IntegrationCardProps> = ({ integration, index })
             className="flex items-center justify-center h-[80px] md:h-[100px] transition-all duration-200 group"
         >
             {integration.logoUrl && !imageError ? (
-                <div className="relative w-full h-full px-4 py-3 rounded-lg bg-white transition-all duration-200 shadow-sm flex items-center justify-center">
+                <div className="relative w-full h-full px-4 py-3 rounded-lg bg-white transition-all duration-200 shadow-sm flex items-center justify-center overflow-hidden">
                     <Image
                         src={integration.logoUrl}
                         alt={integration.name}
                         width={140}
                         height={60}
-                        className={`max-h-[45px] max-w-[120px] md:max-h-[55px] md:max-w-[140px] w-auto h-auto object-contain transition-all duration-200 ${
+                        className={`max-h-[45px] max-w-[90px] md:max-h-[55px] md:max-w-[140px] w-auto h-auto object-contain transition-all duration-200 ${
                             integration.needsInvert
                                 ? 'opacity-90'
                                 : 'grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100'

@@ -21,7 +21,7 @@ const Solution: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-2xl md:text-4xl font-bold text-slate-900 mb-4"
+                    className="text-xl md:text-4xl font-bold text-slate-900 mb-4"
                 >
                     {solutionSection.title}
                 </motion.h2>
@@ -31,7 +31,7 @@ const Solution: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="text-base md:text-lg text-slate-600 mb-12 max-w-3xl mx-auto"
+                    className="text-sm md:text-lg text-slate-600 mb-12 max-w-3xl mx-auto"
                 >
                     {solutionSection.description}
                 </motion.p>

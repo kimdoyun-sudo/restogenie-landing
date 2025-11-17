@@ -28,7 +28,7 @@ const Waitlist: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-2xl md:text-4xl font-bold mb-4"
+                    className="text-xl md:text-4xl font-bold mb-4"
                 >
                     {waitlistSection.title}
                 </motion.h2>

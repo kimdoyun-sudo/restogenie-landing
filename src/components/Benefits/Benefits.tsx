@@ -64,10 +64,10 @@ const Benefits: React.FC = () => {
                     transition={{ duration: 0.4 }}
                     className="text-center mb-12 md:mb-16"
                 >
-                    <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-3">
+                    <h2 className="text-xl md:text-4xl font-bold text-slate-900 mb-3">
                         {currentTitle}
                     </h2>
-                    <p className="text-base md:text-lg text-slate-600 max-w-3xl mx-auto">
+                    <p className="text-sm md:text-lg text-slate-600 max-w-3xl mx-auto">
                         {currentSubtitle}
                     </p>
                 </motion.div>
@@ -108,7 +108,7 @@ const Benefits: React.FC = () => {
                                 <span className={`inline-block ${benefit.badgeColor} text-xs font-semibold px-3 py-1 rounded-full mb-3 self-start`}>
                                     {benefit.badge}
                                 </span>
-                                <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-4">
+                                <h3 className="text-lg md:text-2xl font-bold text-slate-800 mb-4">
                                     {benefit.title}
                                 </h3>
                                 <p className="text-sm md:text-base text-slate-600 mb-6 flex-grow">
@@ -141,7 +141,7 @@ const Benefits: React.FC = () => {
                     transition={{ duration: 0.6 }}
                     className="mt-16 md:mt-20"
                 >
-                    <h3 className="text-xl md:text-2xl font-bold text-slate-700 text-center mb-8">
+                    <h3 className="text-lg md:text-2xl font-bold text-slate-700 text-center mb-8">
                         {currentFutureTitle}
                     </h3>
                     <div className="grid md:grid-cols-2 gap-8">
@@ -157,7 +157,7 @@ const Benefits: React.FC = () => {
                                 <span className={`inline-block ${feature.badgeColor} text-xs font-semibold px-3 py-1 rounded-full mb-3`}>
                                     {feature.badge}
                                 </span>
-                                <h4 className="text-xl md:text-2xl font-bold text-slate-700 mb-4">
+                                <h4 className="text-lg md:text-2xl font-bold text-slate-700 mb-4">
                                     {feature.title}
                                 </h4>
                                 <p className="text-sm md:text-base text-slate-500 mb-6">
