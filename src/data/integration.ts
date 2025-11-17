@@ -3,66 +3,67 @@ export interface IIntegration {
     logoUrl?: string;
     fallbackText?: string;
     category: 'delivery' | 'pos' | 'ad' | 'ai' | 'other';
+    needsInvert?: boolean; // 흰색 글자 로고는 색상 반전 필요
 }
 
 export const integrations: IIntegration[] = [
     // 배달 플랫폼
     {
         name: '배달의민족',
-        logoUrl: 'https://www.baemin.com/favicon-196x196.png',
+        logoUrl: '/images/partners/배달의 민족.png',
         fallbackText: '배달의민족',
         category: 'delivery',
     },
     {
         name: '요기요',
+        logoUrl: '/images/partners/logo-yogiyo.png',
         fallbackText: '요기요',
         category: 'delivery',
+        needsInvert: true,
     },
     {
         name: '쿠팡이츠',
+        logoUrl: '/images/partners/coupang Eats.png',
         fallbackText: '쿠팡이츠',
         category: 'delivery',
+        needsInvert: true,
     },
     // POS 시스템
     {
         name: 'OKPOS',
+        logoUrl: '/images/partners/okpos.png',
         fallbackText: 'OKPOS',
         category: 'pos',
     },
     {
-        name: 'EasyPOS',
+        name: 'EasyCheck',
+        logoUrl: '/images/partners/easycheck.gif',
         fallbackText: 'EasyCheck',
         category: 'pos',
     },
     {
         name: 'Toss Place',
+        logoUrl: '/images/partners/토스플레이스.png',
         fallbackText: 'Toss Place',
         category: 'pos',
+        needsInvert: true,
     },
     {
-        name: '페이히어',
-        fallbackText: '페이히어',
-        category: 'pos',
-    },
-    {
-        name: 'KIS',
-        fallbackText: 'KIS',
-        category: 'pos',
-    },
-    {
-        name: 'NICE',
-        fallbackText: 'NICE',
+        name: 'Payhere',
+        logoUrl: '/images/partners/payhere.png',
+        fallbackText: 'Payhere',
         category: 'pos',
     },
     {
         name: 'KICC',
+        logoUrl: '/images/partners/kicc.jpg',
         fallbackText: 'KICC',
         category: 'pos',
     },
     // 광고/마케팅
     {
         name: '네이버',
-        logoUrl: 'https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png',
+        logoUrl: '/images/partners/Naver_Logotype.png',
         fallbackText: '네이버',
         category: 'ad',
     },
@@ -71,12 +72,15 @@ export const integrations: IIntegration[] = [
         logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg',
         fallbackText: 'Meta',
         category: 'ad',
+        needsInvert: true,
     },
     // AI 파트너
     {
-        name: '메이아이',
-        fallbackText: '메이아이',
+        name: 'mAy-I',
+        logoUrl: '/images/partners/메이아이.svg',
+        fallbackText: 'mAy-I',
         category: 'ai',
+        needsInvert: true,
     },
     {
         name: 'OpenAI',

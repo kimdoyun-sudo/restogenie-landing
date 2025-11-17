@@ -5,5 +5,5 @@ export const heroDetails = {
     ctaText: '[무료] 대기자 명단 등록하고 런칭 혜택 받기',
     ctaUrl: '#waitlist',
     launchInfo: '26년 정식 런칭 | 첫 10개 파트너 매장 한정 혜택',
-    centerImageSrc: '/images/hero/dashboard.png',
+    centerImageSrc: '/images/main-hero.png',
 }

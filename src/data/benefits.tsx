@@ -26,7 +26,7 @@ export const storeBenefits: IBenefit[] = [
                 icon: <FaCheck size={20} className="text-indigo-500" />
             }
         ],
-        imageSrc: "/images/store/dashboard.png"
+        imageSrc: "/images/features/카테고리 별 판매성과.png"
     },
     {
         title: "AI 자동 요약 리포트",
@@ -50,7 +50,7 @@ export const storeBenefits: IBenefit[] = [
                 icon: <FaCheck size={20} className="text-indigo-500" />
             }
         ],
-        imageSrc: "/images/store/ai-report.png"
+        imageSrc: "/images/features/AI 자동요약 리포트.png"
     },
     {
         title: "AI 챗봇",
@@ -74,7 +74,7 @@ export const storeBenefits: IBenefit[] = [
                 icon: <FaCheck size={20} className="text-indigo-500" />
             }
         ],
-        imageSrc: "/images/store/ai-chat.png"
+        imageSrc: "/images/features/AI Chat.png"
     },
     {
         title: "마케팅 최적화",
@@ -103,7 +103,7 @@ export const storeBenefits: IBenefit[] = [
                 icon: <FaCheck size={20} className="text-indigo-500" />
             }
         ],
-        imageSrc: "/images/store/ad-cost.png"
+        imageSrc: "/images/features/광고비용.png"
     },
     {
         title: "리뷰 관리",
@@ -127,7 +127,7 @@ export const storeBenefits: IBenefit[] = [
                 icon: <FaCheck size={20} className="text-indigo-500" />
             }
         ],
-        imageSrc: "/images/store/review.png"
+        imageSrc: "/images/features/리뷰 현황.png"
     },
     {
         title: "상권 분석",
@@ -151,7 +151,7 @@ export const storeBenefits: IBenefit[] = [
                 icon: <FaCheck size={20} className="text-indigo-500" />
             }
         ],
-        imageSrc: "/images/store/peak-time.png"
+        imageSrc: "/images/features/피크타임.png"
     },
 ];
 

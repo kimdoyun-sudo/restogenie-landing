@@ -93,7 +93,7 @@ const Benefits: React.FC = () => {
                                     width={1600}
                                     height={1067}
                                     quality={95}
-                                    className="w-full h-80 md:h-96 object-contain transition-transform duration-300 group-hover:scale-105 rounded-lg"
+                                    className="w-full h-80 md:h-96 object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg"
                                 />
                                 {/* Zoom hint */}
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">

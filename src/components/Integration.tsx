@@ -51,6 +51,7 @@ interface IntegrationCardProps {
         name: string;
         logoUrl?: string;
         fallbackText?: string;
+        needsInvert?: boolean;
     };
     index: number;
 }
@@ -64,17 +65,24 @@ const IntegrationCard: React.FC<IntegrationCardProps> = ({ integration, index })
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
-            className="flex items-center justify-center h-[70px] md:h-[90px] transition-all duration-200 group"
+            className="flex items-center justify-center h-[80px] md:h-[100px] transition-all duration-200 group"
         >
             {integration.logoUrl && !imageError ? (
-                <Image
-                    src={integration.logoUrl}
-                    alt={integration.name}
-                    width={120}
-                    height={50}
-                    className="max-h-[40px] md:max-h-[50px] w-auto object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-200"
-                    onError={() => setImageError(true)}
-                />
+                <div className="relative w-full h-full px-4 py-3 rounded-lg bg-white transition-all duration-200 shadow-sm flex items-center justify-center">
+                    <Image
+                        src={integration.logoUrl}
+                        alt={integration.name}
+                        width={140}
+                        height={60}
+                        className={`max-h-[45px] max-w-[120px] md:max-h-[55px] md:max-w-[140px] w-auto h-auto object-contain transition-all duration-200 ${
+                            integration.needsInvert
+                                ? 'opacity-90'
+                                : 'grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100'
+                        }`}
+                        style={integration.needsInvert ? { filter: 'invert(1)' } : undefined}
+                        onError={() => setImageError(true)}
+                    />
+                </div>
             ) : (
                 <span className="text-sm md:text-base font-semibold text-slate-600">
                     {integration.fallbackText || integration.name}
