@@ -1,16 +1,56 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #FED835;
-  --secondary: #304fff;
+  /* Base Colors - Navy System (from RestoGenie Service) */
+  --background: #f8fafc; /* Slate-50 */
+  --foreground: #0f172a; /* Slate-900 */
+  --primary: #09298E; /* Navy-900 - Service Primary */
+  --primary-hover: #0D3AB8; /* Navy-800 */
+  --secondary: #436FFF; /* Blue - Service Secondary */
 
-  --primary-accent: #e5c230;
-  --foreground-accent: #454545;
-  --hero-background: #F3F3F5;
+  /* Background Variants */
+  --bg-card: #ffffff;
+  --bg-section: #f1f5f9; /* Slate-100 */
+  --bg-navy: #09298E; /* Navy background */
+  --bg-navy-light: #E8EDF9; /* Navy-50 */
+  --hero-gradient: linear-gradient(135deg, #09298E 0%, #0D3AB8 100%);
+
+  /* Text Colors */
+  --text-primary: #0f172a; /* Slate-900 */
+  --text-secondary: #475569; /* Slate-600 */
+  --text-tertiary: #94a3b8; /* Slate-400 */
+  --text-navy: #09298E; /* Navy text */
+
+  /* Semantic Colors */
+  --success: #10b981; /* Green-500 */
+  --warning: #f59e0b; /* Amber-500 */
+  --error: #ef4444; /* Red-500 */
+  --info: #436FFF; /* Blue - Service Info */
+
+  /* Accent Colors - Service Design System */
+  --orange-accent: #FA8823; /* CTA & Warning */
+  --blue-data: #436FFF; /* Positive data */
+  --red-data: #EF4444; /* Negative data */
+
+  /* Data Visualization */
+  --data-positive: #10b981; /* Green for growth */
+  --data-negative: #EF4444; /* Red for decline */
+  --data-neutral: #94a3b8; /* Gray for neutral */
+
+  /* Shadows & Effects */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+  /* Typography */
+  --font-display: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-body: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
 html {
@@ -18,31 +58,124 @@ html {
 }
 
 body {
-  @apply text-lg;
-  
   color: var(--foreground);
   background: var(--background);
-  font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  font-family: var(--font-body);
+  font-size: 15px; /* Mobile base */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px; /* Desktop base */
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
 
-.manrope {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+
+  /* Data Typography - Service Design System */
+  .text-data-primary {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--text-navy);
+    letter-spacing: -0.02em;
+  }
+
+  .text-data-secondary {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--text-navy);
+  }
+
+  .text-data-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+  }
+
+  @media (min-width: 768px) {
+    .text-data-primary {
+      font-size: 3rem;
+    }
+    .text-data-secondary {
+      font-size: 2.25rem;
+    }
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+/* Modal Transitions */
+.modal-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.modal-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-leave {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-leave-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Card Hover */
+.card-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Container */
+.container.main-container {
+  max-width: 1200px;
 }
 
 #logos svg {
@@ -51,4 +184,123 @@ h1, h2, h3, h4, h5, h6 {
 
 .benefit-section:last-of-type > div {
   @apply mb-10;
+}
+
+/* Chip Component - Service Design System */
+.rt-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  border-width: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.rt-chip--success {
+  color: var(--data-positive);
+  background-color: rgba(16, 185, 129, 0.1);
+  border-color: var(--data-positive);
+}
+
+.rt-chip--error {
+  color: var(--data-negative);
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: var(--data-negative);
+}
+
+.rt-chip--warning {
+  color: var(--orange-accent);
+  background-color: rgba(250, 136, 35, 0.1);
+  border-color: var(--orange-accent);
+}
+
+.rt-chip--info {
+  color: var(--blue-data);
+  background-color: rgba(67, 111, 255, 0.1);
+  border-color: var(--blue-data);
+}
+
+/* Dot Label List - Service Design System */
+.dot-label-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dot-label-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dot-label-list__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.dot-label-list__label::before {
+  content: '';
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+.dot-label-list__label--orange::before {
+  background-color: var(--orange-accent);
+}
+
+.dot-label-list__label--purple::before {
+  background-color: #9333ea;
+}
+
+.dot-label-list__label--blue::before {
+  background-color: var(--blue-data);
+}
+
+.dot-label-list__label--red::before {
+  background-color: var(--red-data);
+}
+
+/* Chip Animation */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.rt-chip.animate {
+  animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Data Counter Animation */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.count-up {
+  animation: countUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }

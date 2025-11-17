@@ -1,10 +1,9 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnexi-launch%2Ffinwise-landing-page)
+# RestoGenie - AI 운영 파트너 랜딩 페이지
 
-# Finwise - Next.js + Tailwind Landing Page Template
+RestoGenie는 외식업 사장님을 위한 AI 운영 파트너입니다. 이 레포지토리는 RestoGenie의 공식 랜딩 페이지 소스코드입니다.
 
-Finwise is a lightweight, easily configurable, and customizable **Next.js** and **Tailwind CSS** landing page template. It’s built to be adaptable, performant, and perfect for any product launch, portfolio, or promotional site.
-
-Try out the demo here: [https://finwise-omega.vercel.app](https://finwise-omega.vercel.app).
+**Live Site:** [https://restogenie-landing.vercel.app](https://restogenie-landing.vercel.app)
+**Service:** [https://www.restogenie.co.kr](https://www.restogenie.co.kr)
 
 Please check out the documentation below to get started.
 

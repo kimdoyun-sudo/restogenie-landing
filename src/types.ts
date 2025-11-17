@@ -6,6 +6,8 @@ export interface IMenuItem {
 export interface IBenefit {
     title: string;
     description: string;
+    badge: string;
+    badgeColor: string;
     imageSrc: string;
     bullets: IBenefitBullet[]
 }
@@ -14,6 +16,14 @@ export interface IBenefitBullet {
     title: string;
     description: string;
     icon: JSX.Element;
+}
+
+export interface IFutureBenefit {
+    title: string;
+    description: string;
+    badge: string;
+    badgeColor: string;
+    bullets: IBenefitBullet[]
 }
 
 export interface IPricing {

@@ -1,15 +1,6 @@
-import PricingColumn from "./PricingColumn";
-
-import { tiers } from "@/data/pricing";
-
+// This component is deprecated. Use PricingTabs instead.
 const Pricing: React.FC = () => {
-    return (
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {tiers.map((tier, index) => (
-                <PricingColumn key={tier.name} tier={tier} highlight={index === 1} />
-            ))}
-        </div>
-    )
+    return null;
 }
 
 export default Pricing

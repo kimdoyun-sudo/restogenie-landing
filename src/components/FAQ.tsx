@@ -1,45 +1,79 @@
-"use client"
-import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
-import { BiMinus, BiPlus } from "react-icons/bi";
+'use client';
 
-import SectionTitle from "./SectionTitle";
-import { faqs } from "@/data/faq";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Disclosure, DisclosureButton, DisclosurePanel, Transition } from '@headlessui/react';
+import { BiMinus, BiPlus } from 'react-icons/bi';
+
+import { faqs } from '@/data/faq';
+import Container from './Container';
 
 const FAQ: React.FC = () => {
     return (
         <section id="faq" className="py-10 lg:py-20">
-            <div className="flex flex-col lg:flex-row gap-10">
-                <div className="">
-                    <p className="hidden lg:block text-foreground-accent">FAQ&apos;S</p>
-                    <SectionTitle>
-                        <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">Frequently Asked Questions</h2>
-                    </SectionTitle>
-                    <p className="lg:mt-10 text-foreground-accent text-center lg:text-left">
-                        Ask us anything!
-                    </p>
-                    <a href="mailto:" className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left">help@finwise.com</a>
-                </div>
+            <Container>
+                <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-2xl md:text-4xl font-bold text-slate-900 text-center mb-12 md:mb-16"
+                >
+                    자주 묻는 질문
+                </motion.h2>
 
-                <div className="w-full lg:max-w-2xl mx-auto border-b">
+                <div className="max-w-3xl mx-auto space-y-4">
                     {faqs.map((faq, index) => (
-                        <div key={index} className="mb-7">
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                        >
                             <Disclosure>
                                 {({ open }) => (
-                                    <>
-                                        <DisclosureButton className="flex items-center justify-between w-full px-4 pt-7 text-lg text-left border-t">
-                                            <span className="text-2xl font-semibold">{faq.question}</span>
-                                            {open ? <BiMinus className="w-5 h-5 text-secondary" /> : <BiPlus className="w-5 h-5 text-secondary" />}
+                                    <div
+                                        className={`rounded-2xl border-2 transition-all duration-300 overflow-hidden ${
+                                            open
+                                                ? 'bg-white border-indigo-600 shadow-lg'
+                                                : 'bg-white border-slate-200 hover:border-indigo-300 hover:shadow-md'
+                                        }`}
+                                    >
+                                        <DisclosureButton className="flex items-start justify-between w-full p-6 text-left group">
+                                            <span className="text-lg md:text-xl font-bold text-slate-900 pr-8 group-hover:text-indigo-600 transition-colors duration-300">
+                                                {faq.question}
+                                            </span>
+                                            <div
+                                                className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+                                                    open
+                                                        ? 'bg-indigo-600 text-white rotate-180'
+                                                        : 'bg-slate-100 text-slate-600 group-hover:bg-indigo-100'
+                                                }`}
+                                            >
+                                                {open ? <BiMinus className="w-5 h-5" /> : <BiPlus className="w-5 h-5" />}
+                                            </div>
                                         </DisclosureButton>
-                                        <DisclosurePanel className="px-4 pt-4 pb-2 text-foreground-accent">
-                                            {faq.answer}
-                                        </DisclosurePanel>
-                                    </>
+
+                                        <Transition
+                                            enter="transition duration-300 ease-out"
+                                            enterFrom="transform scale-95 opacity-0"
+                                            enterTo="transform scale-100 opacity-100"
+                                            leave="transition duration-200 ease-out"
+                                            leaveFrom="transform scale-100 opacity-100"
+                                            leaveTo="transform scale-95 opacity-0"
+                                        >
+                                            <DisclosurePanel className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                                                {faq.answer}
+                                            </DisclosurePanel>
+                                        </Transition>
+                                    </div>
                                 )}
                             </Disclosure>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
-            </div>
+            </Container>
         </section>
     );
 };

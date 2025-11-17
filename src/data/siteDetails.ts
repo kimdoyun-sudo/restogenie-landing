@@ -1,12 +1,14 @@
 export const siteDetails = {
-    siteName: 'Finwise',
-    siteUrl: 'https://finwise-omega.vercel.app/',
+    siteName: 'RestoGenie',
+    siteUrl: 'https://restogenie-landing.vercel.app/',
+    serviceUrl: 'https://www.restogenie.co.kr',
     metadata: {
-        title: 'Finwise - Next.js and Tailwind CSS Landing Page Template',
-        description: 'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
+        title: 'RestoGenie | 사장님을 위한 AI 운영 파트너',
+        description: 'RestoGenie는 외식업 사장님을 위한 AI 운영 파트너입니다. 재고, 인력, 마케팅을 자동화하여 숨은 이익을 찾아드립니다.',
     },
-    language: 'en-us',
-    locale: 'en-US',
-    siteLogo: `${process.env.BASE_PATH || ''}/images/logo.png`, // or use a string for the logo e.g. "TechStartup"
+    language: 'ko',
+    locale: 'ko-KR',
+    siteLogo: '/logo.svg', // RestoGenie 로고
     googleAnalyticsId: '', // e.g. G-XXXXXXX,
+    channelTalkPluginKey: '6730846e-0cb4-4d5e-8997-7d768be6b050',
 }

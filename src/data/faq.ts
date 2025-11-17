@@ -3,23 +3,23 @@ import { siteDetails } from "./siteDetails";
 
 export const faqs: IFAQ[] = [
     {
-        question: `Is ${siteDetails.siteName} secure?`,
-        answer: 'Absolutely. We use bank-level encryption to protect your data and never store your login information. Plus, our biometric authentication adds an extra layer of security.',
+        question: `${siteDetails.siteName}는 안전한가요?`,
+        answer: '네, 안심하셔도 됩니다. 저희는 은행급 보안 시스템을 사용하여 모든 데이터를 암호화하고 있으며, 개인정보는 철저히 보호됩니다. 또한 주요 POS 및 배달 플랫폼과의 공식 연동을 통해 안전하게 데이터를 수집합니다.',
     },
     {
-        question: `Can I use ${siteDetails.siteName} on multiple devices?`,
-        answer: 'Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer.',
+        question: `여러 기기에서 사용할 수 있나요?`,
+        answer: '물론입니다! 레스토지니 계정은 스마트폰, 태블릿, 컴퓨터 등 모든 기기에서 실시간으로 동기화됩니다. 매장에서는 태블릿으로, 집에서는 PC로 편하게 확인하실 수 있습니다.',
     },
     {
-        question: 'Can I connect all my bank accounts?',
-        answer: `Yes! ${siteDetails.siteName} supports connections with over 10,000 financial institutions worldwide. Simply log in through our secure portal to link your accounts.`
+        question: 'POS와 배달앱 연동이 가능한가요?',
+        answer: '네! 레스토지니는 OKPOS, EasyPOS, Toss Place, 페이히어 등 주요 POS 시스템과 배달의민족, 요기요, 쿠팡이츠 등 모든 주요 배달 플랫폼을 지원합니다. 간단한 API 연동만으로 자동으로 데이터가 통합됩니다.',
     },
     {
-        question: 'Do I need any financial expertise to use the investing features?',
-        answer: 'Not at all! Our expert-curated portfolios and educational resources make investing accessible to everyone, regardless of experience level.',
+        question: '초보자도 사용할 수 있나요?',
+        answer: '당연합니다! 레스토지니는 복잡한 기술 지식이 없어도 누구나 쉽게 사용할 수 있도록 직관적으로 설계되었습니다. AI 챗봇이 궁금한 점을 24시간 친절하게 답변해드리고, 전담 매니저(Pro 이상)가 사용법을 안내해드립니다.',
     },
     {
-        question: 'What if I need help using the app?',
-        answer: 'Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise.'
+        question: '도움이 필요할 때는 어떻게 하나요?',
+        answer: '채널톡을 통해 실시간으로 문의하실 수 있으며, 이메일(ctrl-m@ctrl-m.co.kr)로도 언제든지 연락 가능합니다. Deluxe 이상 플랜에서는 우선 지원을 받으실 수 있고, Pro 이상 플랜에서는 전담 성공 매니저가 배정되어 정기적인 컨설팅을 제공합니다.',
     }
 ];
