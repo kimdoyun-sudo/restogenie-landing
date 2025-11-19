@@ -117,7 +117,7 @@ export const storeBenefits: IBenefit[] = [
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
-                title: "AI 기반 리뷰 답글 자동 생성",
+                title: "(출시 예정) AI 기반 리뷰 답글 자동 생성",
                 description: "신속한 고객 응대",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
@@ -132,7 +132,7 @@ export const storeBenefits: IBenefit[] = [
     {
         title: "상권 분석",
         description: "CCTV를 연동해 매장 앞 유동인구와 방문 전환율을 분석합니다. 매출 하락의 원인이 상권 문제인지, 운영 문제인지 데이터로 정확히 파악하세요.",
-        badge: "상권 분석",
+        badge: "AI Vision",
         badgeColor: "bg-purple-100 text-purple-800",
         bullets: [
             {
@@ -141,12 +141,12 @@ export const storeBenefits: IBenefit[] = [
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
-                title: "방문 전환율 측정",
-                description: "매출 하락 원인 분석",
+                title: "피크 시간대 측정",
+                description: "시간대별 방문, 주문 전환 파악",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
-                title: "방문객 성별/연령대 분석 (AI Vision)",
+                title: "방문객 성별/연령대 분석",
                 description: "타겟 고객 파악",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             }
@@ -333,7 +333,7 @@ export const hqFutureFeatures: IFutureBenefit[] = [
     {
         title: "브랜드 전략 수립 지원",
         description: "전 가맹점의 매출, 고객, 상권 데이터를 통합 분석하여 신메뉴 출시, 프로모션 기획, 입지 선정 등 브랜드 전략 수립을 AI가 지원합니다.",
-        badge: "커스터마이징 논의",
+        badge: "차후 지원 예정",
         badgeColor: "bg-slate-100 text-slate-600",
         bullets: [
             {
