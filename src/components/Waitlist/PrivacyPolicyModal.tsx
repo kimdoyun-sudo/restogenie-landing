@@ -44,7 +44,7 @@ const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, onClose
                         <div className="p-6 overflow-y-auto max-h-[calc(80vh-140px)]">
                             <div className="space-y-4">
                                 <p className="text-slate-700 text-sm md:text-base leading-relaxed">
-                                    (주)컨트롤엠은 '레스토지니' 서비스 제공을 위해 아래와 같이 개인정보를 수집·이용합니다.
+                                    (주)컨트롤엠은 &apos;레스토지니&apos; 서비스 제공을 위해 아래와 같이 개인정보를 수집·이용합니다.
                                 </p>
 
                                 <table className="w-full border-collapse border border-slate-300 text-sm md:text-base">
