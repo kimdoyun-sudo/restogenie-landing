@@ -6,19 +6,23 @@ import { FaArrowRight } from 'react-icons/fa6';
 import { waitlistFields, waitlistFormConfig } from '@/data/waitlist';
 import SuccessModal from './SuccessModal';
 import ErrorModal from './ErrorModal';
+import PrivacyPolicyModal from './PrivacyPolicyModal';
 
 const WaitlistForm: React.FC = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [showSuccessModal, setShowSuccessModal] = useState(false);
     const [showErrorModal, setShowErrorModal] = useState(false);
+    const [showPrivacyModal, setShowPrivacyModal] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        const formData = new FormData(e.currentTarget);
+        const form = e.currentTarget;
+        const formData = new FormData(form);
 
         // 클라이언트 측 검증
+        const storeType = formData.get('storeType') as string;
         const storeName = formData.get('storeName') as string;
         const name = formData.get('name') as string;
         const phone = formData.get('phone') as string;
@@ -26,7 +30,7 @@ const WaitlistForm: React.FC = () => {
         const privacy = formData.get('privacy');
 
         // 필수 필드 검증
-        if (!storeName || !name || !phone || !email) {
+        if (!storeType || !storeName || !name || !phone || !email) {
             alert('모든 필수 항목을 입력해주세요.');
             return;
         }
@@ -76,7 +80,7 @@ const WaitlistForm: React.FC = () => {
 
             if (result.result === 'success') {
                 // 폼 초기화
-                e.currentTarget.reset();
+                form.reset();
                 // 성공 모달 표시
                 setShowSuccessModal(true);
             } else {
@@ -115,14 +119,46 @@ const WaitlistForm: React.FC = () => {
                                     required={field.required}
                                     className="h-4 w-4 text-indigo-600 border-gray-300 rounded mt-0.5"
                                 />
-                                <label htmlFor={field.id} className="ml-2 block text-xs md:text-sm text-slate-600">
+                                <div className="ml-2 block text-xs md:text-sm text-slate-600">
+                                    <button
+                                        type="button"
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            e.stopPropagation();
+                                            setShowPrivacyModal(true);
+                                        }}
+                                        className="underline hover:text-indigo-600 transition-colors"
+                                    >
+                                        개인정보 처리방침
+                                    </button>
+                                    에 동의합니다.
+                                </div>
+                            </div>
+                        );
+                    }
+
+                    if (field.type === 'select') {
+                        return (
+                            <div key={field.id} className="grid grid-cols-[80px_1fr] md:grid-cols-[120px_1fr] gap-4 items-center">
+                                <label htmlFor={field.id} className="text-sm font-medium text-slate-700 text-left">
                                     {field.label}
-                                    {waitlistFormConfig.privacyPolicyUrl && (
-                                        <a href={waitlistFormConfig.privacyPolicyUrl} className="underline ml-1">
-                                            (보기)
-                                        </a>
-                                    )}
                                 </label>
+                                <select
+                                    id={field.id}
+                                    name={field.name}
+                                    required={field.required}
+                                    className="w-full border-slate-300 rounded-md shadow-sm text-slate-900 focus:border-indigo-500 focus:ring-indigo-500"
+                                    defaultValue=""
+                                >
+                                    <option value="" disabled>
+                                        {field.placeholder}
+                                    </option>
+                                    {field.options?.map((option) => (
+                                        <option key={option} value={option}>
+                                            {option}
+                                        </option>
+                                    ))}
+                                </select>
                             </div>
                         );
                     }
@@ -192,6 +228,11 @@ const WaitlistForm: React.FC = () => {
                 isOpen={showErrorModal}
                 onClose={() => setShowErrorModal(false)}
                 message={errorMessage}
+            />
+
+            <PrivacyPolicyModal
+                isOpen={showPrivacyModal}
+                onClose={() => setShowPrivacyModal(false)}
             />
         </>
     );

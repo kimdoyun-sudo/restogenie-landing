@@ -1,10 +1,15 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 
 import { footerDetails } from '@/data/footer';
+import PrivacyPolicyModal from './Waitlist/PrivacyPolicyModal';
 
 const Footer: React.FC = () => {
+    const [showPrivacyModal, setShowPrivacyModal] = useState(false);
+
     return (
         <footer className="bg-slate-900 text-white py-8 px-4">
             <div className="max-w-7xl w-full mx-auto">
@@ -38,9 +43,18 @@ const Footer: React.FC = () => {
                 <div className="text-center text-xs text-slate-400 mb-4">
                     {footerDetails.legalLinks.map((link, index) => (
                         <React.Fragment key={link.text}>
-                            <Link href={link.url} className="hover:text-white transition">
-                                {link.text}
-                            </Link>
+                            {link.text === '개인정보 처리방침' ? (
+                                <button
+                                    onClick={() => setShowPrivacyModal(true)}
+                                    className="hover:text-white transition underline"
+                                >
+                                    {link.text}
+                                </button>
+                            ) : (
+                                <Link href={link.url} className="hover:text-white transition">
+                                    {link.text}
+                                </Link>
+                            )}
                             {index < footerDetails.legalLinks.length - 1 && <span className="mx-2">|</span>}
                         </React.Fragment>
                     ))}
@@ -51,6 +65,11 @@ const Footer: React.FC = () => {
                     <p>{footerDetails.copyright}</p>
                 </div>
             </div>
+
+            <PrivacyPolicyModal
+                isOpen={showPrivacyModal}
+                onClose={() => setShowPrivacyModal(false)}
+            />
         </footer>
     );
 };

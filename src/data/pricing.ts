@@ -273,7 +273,7 @@ export const hqContact = {
     title: '지금 바로 AI 혁신을 시작하세요',
     description: '전문 컨설턴트가 방문하여 귀사의 비즈니스에 최적화된 맞춤형 도입 전략과 기대효과를 상세히 안내해 드립니다.',
     ctaText: '전문가와 상담하기',
-    ctaUrl: 'mailto:ctrl-m@ctrl-m.co.kr?subject=RestoGenie HQ 도입 문의',
+    ctaUrl: 'mailto:restogenie@ctrl-m.co.kr?subject=RestoGenie HQ 도입 문의',
 };
 
 // Store 요금제 기능 비교 테이블

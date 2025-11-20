@@ -2,12 +2,13 @@ export interface IWaitlistField {
     id: string;
     name: string;
     label: string;
-    type: 'text' | 'email' | 'tel' | 'textarea' | 'checkbox';
+    type: 'text' | 'email' | 'tel' | 'textarea' | 'checkbox' | 'select';
     placeholder?: string;
     required: boolean;
     pattern?: string;
     rows?: number;
     maxLength?: number;
+    options?: string[];
 }
 
 export interface IWaitlistBenefit {
@@ -41,11 +42,20 @@ export const waitlistBenefits: IWaitlistBenefit[] = [
 
 export const waitlistFields: IWaitlistField[] = [
     {
+        id: 'storeType',
+        name: 'storeType',
+        label: '구분',
+        type: 'select',
+        placeholder: '선택하세요',
+        required: true,
+        options: ['가맹본사', '가맹점주', '독립매장주', '기타'],
+    },
+    {
         id: 'storeName',
         name: 'storeName',
-        label: '매장명',
+        label: '회사/매장명',
         type: 'text',
-        placeholder: '매장명을 입력하세요',
+        placeholder: '회사/매장명을 입력하세요',
         required: true,
     },
     {
@@ -111,5 +121,5 @@ export const waitlistFormConfig = {
     errorModalMessage: '죄송합니다. 요청 처리 중 오류가 발생했습니다.\n잠시 후 다시 시도하거나 고객센터로 문의해주세요.',
     errorModalButtonText: '확인',
     privacyPolicyUrl: '#', // TODO: 실제 개인정보 처리방침 페이지 URL로 변경
-    googleAppsScriptUrl: 'https://script.google.com/macros/s/AKfycbxuDvGKClt8EIobA0eA4fVmpuxpf3nVeC9SgWPeUDQMKeJmk9wx7-EHP0VScFJ1JM1I2Q/exec',
+    googleAppsScriptUrl: 'https://script.google.com/a/macros/ctrl-m.co.kr/s/AKfycbzsqMP8oAHG_MFti3IrAeSTNT_3efElx57eokZoh1XXouWNMjb-qURutWUzsX_1UVLF4w/exec',
 };
