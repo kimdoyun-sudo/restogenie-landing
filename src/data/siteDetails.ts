@@ -3,7 +3,7 @@ export const siteDetails = {
     siteUrl: 'https://www.restogenie.net',
     serviceUrl: 'https://www.restogenie.co.kr',
     metadata: {
-        title: 'RestoGenie | 사장님을 위한 AI 운영 파트너',
+        title: '레스토지니 | 사장님을 위한 AI 운영 파트너',
         description: 'RestoGenie는 외식업 사장님을 위한 AI 운영 파트너입니다. 재고, 인력, 마케팅을 자동화하여 숨은 이익을 찾아드립니다.',
     },
     language: 'ko',
