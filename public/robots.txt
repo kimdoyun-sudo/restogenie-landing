@@ -7,4 +7,4 @@ Allow: /
 # Disallow: /private/
 
 # Sitemap
-Sitemap: https://restogenie-landing.vercel.app/sitemap.xml
+Sitemap: https://www.restogenie.net/sitemap.xml

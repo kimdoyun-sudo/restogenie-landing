@@ -1,6 +1,6 @@
 export const siteDetails = {
     siteName: 'RestoGenie',
-    siteUrl: 'https://restogenie-landing.vercel.app/',
+    siteUrl: 'https://www.restogenie.net',
     serviceUrl: 'https://www.restogenie.co.kr',
     metadata: {
         title: 'RestoGenie | 사장님을 위한 AI 운영 파트너',
