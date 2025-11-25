@@ -4,7 +4,7 @@ import { siteDetails } from "./siteDetails";
 export const faqs: IFAQ[] = [
     {
         question: `${siteDetails.siteName}는 안전한가요?`,
-        answer: '네, 안심하셔도 됩니다. 저희는 은행급 보안 시스템을 사용하여 모든 데이터를 암호화하고 있으며, 개인정보는 철저히 보호됩니다. 또한 주요 POS 및 배달 플랫폼과의 공식 연동을 통해 안전하게 데이터를 수집합니다.',
+        answer: '네, 안심하셔도 됩니다. 저희는 업계 표준 보안 프로토콜을 적용하고 있으며, 개인정보 보호에 최선을 다하고 있습니다. 또한 주요 POS 및 배달 플랫폼과의 공식 연동을 통해 안전하게 데이터를 수집합니다.',
     },
     {
         question: `여러 기기에서 사용할 수 있나요?`,
@@ -12,7 +12,7 @@ export const faqs: IFAQ[] = [
     },
     {
         question: 'POS와 배달앱 연동이 가능한가요?',
-        answer: '네! 레스토지니는 OKPOS, EasyPOS, Toss Place, 페이히어 등 주요 POS 시스템과 배달의민족, 요기요, 쿠팡이츠 등 모든 주요 배달 플랫폼을 지원합니다. 간단한 API 연동만으로 자동으로 데이터가 통합됩니다.',
+        answer: '네! 레스토지니는 OKPOS, EasyPOS, Toss Place, 페이히어 등 주요 POS 시스템과 배달의민족, 요기요, 쿠팡이츠 등 주요 배달 플랫폼 연동을 지원합니다. API 연동을 통해 데이터 통합이 가능합니다.',
     },
     {
         question: '초보자도 사용할 수 있나요?',
@@ -20,6 +20,6 @@ export const faqs: IFAQ[] = [
     },
     {
         question: '도움이 필요할 때는 어떻게 하나요?',
-        answer: '채널톡을 통해 실시간으로 문의하실 수 있으며, 이메일(restogenie@ctrl-m.co.kr)로도 언제든지 연락 가능합니다. Deluxe 이상 플랜에서는 우선 지원을 받으실 수 있고, Pro 이상 플랜에서는 전담 성공 매니저가 배정되어 정기적인 컨설팅을 제공합니다.',
+        answer: '채널톡을 통해 영업시간 내 문의하실 수 있으며, 이메일(restogenie@ctrl-m.co.kr)로도 연락 가능합니다. Deluxe 이상 플랜에서는 우선 응대를 지원하며, Pro 이상 플랜에서는 전담 성공 매니저가 배정되어 컨설팅을 제공합니다.',
     }
 ];
