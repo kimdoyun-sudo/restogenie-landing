@@ -6,13 +6,13 @@ import { IBenefit, IFutureBenefit } from "@/types"
 export const storeBenefits: IBenefit[] = [
     {
         title: "통합 대시보드",
-        description: "POS, 배달의민족, 쿠팡이츠, 네이버 광고... 흩어진 모든 데이터를 한 곳에 모아 실시간으로 보여줍니다. 오늘 얼마를 벌었는지, 어떤 채널이 문제인지 즉시 파악하세요.",
+        description: "POS, 배달의민족, 쿠팡이츠, 네이버 광고... 주요 데이터를 한 곳에 모아 보여줍니다. 오늘 얼마를 벌었는지, 어떤 채널이 문제인지 파악하세요.",
         badge: "통합 관리",
         badgeColor: "bg-blue-100 text-blue-800",
         bullets: [
             {
                 title: "POS, 배달앱, 광고 채널 데이터 통합",
-                description: "모든 매출을 한눈에 확인",
+                description: "매출 현황을 한눈에 확인",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
@@ -46,7 +46,7 @@ export const storeBenefits: IBenefit[] = [
             },
             {
                 title: "개선 포인트 및 액션 플랜 제안",
-                description: "즉시 실행 가능한 조언",
+                description: "실행에 참고할 수 있는 조언",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             }
         ],
@@ -54,18 +54,18 @@ export const storeBenefits: IBenefit[] = [
     },
     {
         title: "AI 챗봇",
-        description: "본사 매뉴얼, 레시피, 프로모션 공지를 AI가 모두 학습합니다. \"신메뉴 레시피 알려줘\", \"오늘 마감 매출 얼마야?\" 음성이나 텍스트로 물어보면 AI가 24시간 즉시 답변합니다.",
+        description: "본사 매뉴얼, 레시피, 프로모션 공지를 AI가 학습합니다. \"신메뉴 레시피 알려줘\", \"오늘 마감 매출 얼마야?\" 음성이나 텍스트로 물어보면 AI가 답변을 도와드립니다.",
         badge: "AI 비서",
         badgeColor: "bg-purple-100 text-purple-800",
         bullets: [
             {
                 title: "본사 매뉴얼/레시피 기반 질의응답",
-                description: "음성 또는 텍스트로 실시간 답변 제공",
+                description: "음성 또는 텍스트로 답변 제공",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
                 title: "실시간 매장 데이터(매출, 재고) 조회",
-                description: "궁금한 정보를 즉시 확인 가능",
+                description: "궁금한 정보를 빠르게 확인 가능",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
@@ -78,7 +78,7 @@ export const storeBenefits: IBenefit[] = [
     },
     {
         title: "마케팅 최적화",
-        description: "고객 데이터를 분석해 재방문/이탈 고객을 자동으로 식별하고, 고객 세분화를 통해 맞춤형 프로모션을 발송합니다. 광고 효율(ROAS)을 실시간으로 분석하여 비효율 채널을 최적화합니다.",
+        description: "고객 데이터를 분석해 재방문/이탈 고객 식별을 도와드리고, 고객 세분화를 통해 맞춤형 프로모션을 발송합니다. 광고 효율(ROAS)을 분석하여 비효율 채널 개선을 도와드립니다.",
         badge: "매출 증대",
         badgeColor: "bg-blue-100 text-blue-800",
         bullets: [
@@ -89,12 +89,12 @@ export const storeBenefits: IBenefit[] = [
             },
             {
                 title: "고객 세분화 및 맞춤형 프로모션",
-                description: "효과적인 마케팅 자동화",
+                description: "마케팅 업무 자동화 지원",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
                 title: "실시간 광고(ROAS) 채널별 분석",
-                description: "광고비 효율 최적화",
+                description: "광고비 효율 분석",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
@@ -159,7 +159,7 @@ export const storeBenefits: IBenefit[] = [
 export const hqBenefits: IBenefit[] = [
     {
         title: "전 가맹점 통합 대시보드",
-        description: "전국 모든 가맹점의 핵심 성과 지표(KPI)를 실시간으로 비교 분석합니다. 매출, 재고, 고객 만족도를 한눈에 파악하고 우수 점포와 부진 점포를 즉시 확인하세요.",
+        description: "등록된 가맹점의 핵심 성과 지표(KPI)를 비교 분석합니다. 매출, 재고, 고객 만족도를 한눈에 파악하고 우수 점포와 부진 점포를 확인하세요.",
         badge: "통합 관리",
         badgeColor: "bg-indigo-100 text-indigo-800",
         bullets: [
@@ -207,7 +207,7 @@ export const hqBenefits: IBenefit[] = [
     },
     {
         title: "본사 매뉴얼 AI 학습",
-        description: "본사의 모든 운영 매뉴얼, 레시피, 프로모션 가이드를 AI가 학습합니다. 각 가맹점의 AI 챗봇이 본사 매뉴얼 기반으로 질문에 답변하여 슈퍼바이저의 반복 업무를 줄여줍니다.",
+        description: "본사의 운영 매뉴얼, 레시피, 프로모션 가이드를 AI가 학습합니다. 각 가맹점의 AI 챗봇이 본사 매뉴얼 기반으로 질문에 답변하여 슈퍼바이저의 반복 업무를 줄여줍니다.",
         badge: "교육 자동화",
         badgeColor: "bg-purple-100 text-purple-800",
         bullets: [
@@ -218,7 +218,7 @@ export const hqBenefits: IBenefit[] = [
             },
             {
                 title: "슈퍼바이저 반복 업무 자동화",
-                description: "24시간 AI 기반 가맹점 지원",
+                description: "AI 기반 가맹점 지원",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
@@ -231,7 +231,7 @@ export const hqBenefits: IBenefit[] = [
     },
     {
         title: "가맹점 커뮤니케이션",
-        description: "본사 공지사항, 프로모션 안내, 신제품 정보를 전 가맹점에 실시간으로 전달합니다. 각 가맹점의 확인 여부를 추적하고 중요 공지는 자동 리마인드합니다.",
+        description: "본사 공지사항, 프로모션 안내, 신제품 정보를 전 가맹점에 빠르게 전달합니다. 각 가맹점의 확인 여부를 추적하고 중요 공지는 자동 리마인드합니다.",
         badge: "소통 강화",
         badgeColor: "bg-red-100 text-red-800",
         bullets: [
@@ -270,7 +270,7 @@ export const storeFutureFeatures: IFutureBenefit[] = [
             },
             {
                 title: "유통기한 임박 알림",
-                description: "폐기율 제로 도전",
+                description: "폐기율 감소 지원",
                 icon: <FaCheck size={20} className="text-slate-400" />
             },
             {
@@ -282,13 +282,13 @@ export const storeFutureFeatures: IFutureBenefit[] = [
     },
     {
         title: "인력 관리",
-        description: "과거 매출, 날씨, 주변 이벤트 데이터를 기반으로 최적의 근무 인원을 추천합니다.",
+        description: "과거 매출, 날씨, 주변 이벤트 데이터를 기반으로 적정 근무 인원을 추천합니다.",
         badge: "차후 지원 예정",
         badgeColor: "bg-slate-100 text-slate-600",
         bullets: [
             {
                 title: "시간대별 최적 근무 인원 추천",
-                description: "인건비 최적화",
+                description: "인건비 관리 지원",
                 icon: <FaCheck size={20} className="text-slate-400" />
             },
             {
