@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from 'next/script';
 
 import Header from "@/components/Header";
@@ -71,6 +72,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
