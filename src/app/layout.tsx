@@ -85,7 +85,7 @@ export const metadata: Metadata = {
   verification: {
     google: '5F8pKdG1CtCjiDnmAIPjrs3ElPvcg3ASToQ6HMlOT8w',
     other: {
-      'naver-site-verification': '', // 네이버 웹마스터 도구 인증 코드 (나중에 추가)
+      'naver-site-verification': 'navera4372e2da19dbefe3433193a7ffb2407',
     },
   },
 };
