@@ -131,7 +131,7 @@ export const hqPlans: IHQPlan[] = [
     {
         phase: '1',
         phaseName: 'Access',
-        phaseNameEn: '가맹점 운영 효율 극대화',
+        phaseNameEn: '가맹점 운영 효율 개선',
         items: [
             {
                 name: '초기 구축비',
@@ -236,11 +236,11 @@ export const hqProcess = {
     phases: [
         {
             phase: 1,
-            title: 'Access: 가맹점 운영 효율 극대화',
+            title: 'Access: 가맹점 운영 효율 개선',
             items: [
                 {
                     title: '가맹점 전용 AI 비서',
-                    description: '본사 매뉴얼, 공지, 레시피를 학습한 AI 챗봇이 가맹점주의 모든 질문에 24시간 답변하며, 슈퍼바이저의 반복 업무를 줄여줍니다.',
+                    description: '본사 매뉴얼, 공지, 레시피를 학습한 AI 챗봇이 가맹점주의 질문에 답변하며, 슈퍼바이저의 반복 업무를 줄여줍니다.',
                 },
                 {
                     title: '데이터 기반 점포 운영',
@@ -262,7 +262,7 @@ export const hqProcess = {
                 },
                 {
                     title: 'ERP 연동 (선택)',
-                    description: '본사 ERP와 연동하여 원가, 재고 데이터를 통합 분석하고 브랜드 전체의 수익성을 극대화하는 전략을 수립합니다.',
+                    description: '본사 ERP와 연동하여 원가, 재고 데이터를 통합 분석하고 브랜드 전체의 수익성을 개선하는 전략을 수립합니다.',
                 },
             ],
         },
