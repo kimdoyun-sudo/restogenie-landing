@@ -38,8 +38,8 @@ export const problems: IProblem[] = [
         icon: 'FaSackXmark',
         iconColor: 'text-red-500', // 비용 문제
         title: '예측 불가능한 비용',
-        description: '버려지는 식자재, 눈덩이처럼 불어나는 수수료... 매달 정산 후 남는 게 없으신가요?',
-        subtitle: '(재고 손실 비용, 높은 배달 수수료)',
+        description: '눈덩이처럼 불어나는 배달 수수료, 광고비... 매달 정산 후 남는 게 없으신가요?',
+        subtitle: '(높은 배달 수수료, 비효율적 광고 지출)',
         stat: {
             value: '평균 18%',
             direction: 'up',
@@ -71,11 +71,11 @@ export const problems: IProblem[] = [
     {
         icon: 'FaBookOpen',
         iconColor: 'text-amber-500', // 시간 문제
-        title: '신규 직원/가맹 교육',
-        description: '새로운 직원이 올 때마다 똑같은 매뉴얼 교육을 반복하고, 질문에 응대하느라 지치셨나요?',
-        subtitle: '(높은 교육 비용, 표준화 어려움)',
+        title: '흩어진 운영 매뉴얼',
+        description: '레시피, 운영 가이드, 본사 공지가 카톡과 문서에 분산되어 찾기 어렵고, 새 직원에게 전달하기도 번거로우신가요?',
+        subtitle: '(매뉴얼 관리 어려움, 지식 공유 부재)',
         stat: {
-            value: '교육 2주 필요',
+            value: '자료 찾기 어려움',
             variant: 'warning',
         },
     },
