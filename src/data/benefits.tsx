@@ -54,13 +54,13 @@ export const storeBenefits: IBenefit[] = [
     },
     {
         title: "AI 챗봇",
-        description: "본사 매뉴얼, 레시피, 프로모션 공지를 AI가 학습합니다. \"신메뉴 레시피 알려줘\", \"오늘 마감 매출 얼마야?\" 음성이나 텍스트로 물어보면 AI가 답변을 도와드립니다.",
+        description: "본사 매뉴얼, 레시피, 프로모션 공지를 AI가 학습합니다. \"신메뉴 레시피 알려줘\", \"오늘 마감 매출 얼마야?\" 텍스트로 물어보면 AI가 답변을 도와드립니다.",
         badge: "AI 비서",
         badgeColor: "bg-purple-100 text-purple-800",
         bullets: [
             {
                 title: "본사 매뉴얼/레시피 기반 질의응답",
-                description: "음성 또는 텍스트로 답변 제공",
+                description: "텍스트 채팅으로 즉시 답변 제공",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
