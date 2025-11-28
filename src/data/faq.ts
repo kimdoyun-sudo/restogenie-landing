@@ -12,7 +12,7 @@ export const faqs: IFAQ[] = [
     },
     {
         question: 'POS와 배달앱 연동이 가능한가요?',
-        answer: '네! 레스토지니는 OKPOS, EasyPOS, Toss Place, 페이히어 등 주요 POS 시스템과 배달의민족, 요기요, 쿠팡이츠 등 주요 배달 플랫폼 연동을 지원합니다. API 연동을 통해 데이터 통합이 가능합니다.',
+        answer: '네! 레스토지니는 OKPOS, EasyPOS, 페이히어 등 주요 POS 시스템과 배달의민족, 요기요, 쿠팡이츠 등 주요 배달 플랫폼 연동을 지원합니다. API 연동을 통해 데이터 통합이 가능합니다.',
     },
     {
         question: '초보자도 사용할 수 있나요?',

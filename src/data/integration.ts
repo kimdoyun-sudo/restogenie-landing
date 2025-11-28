@@ -42,13 +42,6 @@ export const integrations: IIntegration[] = [
         category: 'pos',
     },
     {
-        name: 'Toss Place',
-        logoUrl: '/images/partners/토스플레이스.png',
-        fallbackText: 'Toss Place',
-        category: 'pos',
-        needsInvert: true,
-    },
-    {
         name: 'Payhere',
         logoUrl: '/images/partners/payhere.png',
         fallbackText: 'Payhere',
