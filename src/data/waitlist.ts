@@ -33,11 +33,6 @@ export const waitlistBenefits: IWaitlistBenefit[] = [
         iconColor: 'text-amber-400',
         text: '런칭 기념, 첫 3개월 50% 할인 혜택',
     },
-    {
-        icon: 'FaEnvelopeOpenText',
-        iconColor: 'text-amber-400',
-        text: '외식업 운영 노하우 뉴스레터 무료 구독',
-    },
 ];
 
 export const waitlistFields: IWaitlistField[] = [

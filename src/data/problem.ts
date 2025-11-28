@@ -16,7 +16,7 @@ export const problems: IProblem[] = [
         icon: 'FaDatabase',
         iconColor: 'text-slate-600', // 데이터/시스템 문제
         title: '여기저기 흩어져 있는 데이터',
-        description: '배달앱, POS, 회계... 여러 시스템에 데이터가 분산되어 전체 그림을 보기 어렵지 않으신가요?',
+        description: '배달앱, POS, 플랫폼... 여러 시스템에 데이터가 분산되어 전체 그림을 보기 어렵지 않으신가요?',
         subtitle: '(데이터 통합 불가, 시스템 파편화)',
         stat: {
             value: '시스템 5개+',
