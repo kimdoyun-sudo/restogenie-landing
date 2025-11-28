@@ -43,7 +43,7 @@ export const storePlans: IStorePlan[] = [
         monthlyPrice: 9900,
         features: [
             'POS 데이터 집계',
-            'AI 주간/월간 리포트',
+            'AI 주간 리포트',
             '10,000 AI 에이전트 크레딧',
             '기본 AI 분석 카드',
             '2건/월 AI 기반 실행 제안',
@@ -118,7 +118,7 @@ export const storePlans: IStorePlan[] = [
             '500명/월 고객 분석',
             '지역구 전체 경쟁사 분석',
             'AI Vision (1개 매장)',
-            '실시간 유동인구 분석',
+            '유동인구 분석',
             '방문 전환율 측정',
             '방문객 성별/연령대 분석',
         ],
@@ -184,7 +184,7 @@ export const hqAccessFeatures = {
             title: '📊 데이터 & 리포트',
             features: [
                 'POS/배달/광고 데이터 통합',
-                'AI 주간/월간 리포트',
+                'AI 주간 리포트',
                 '카카오톡 알림 및 리포트',
             ],
         },
@@ -218,7 +218,7 @@ export const hqAccessFeatures = {
             title: '🏢 본사-가맹점 연동',
             features: [
                 '본사 매뉴얼 기반 AI 챗봇',
-                '본사 공지사항 실시간 확인',
+                '본사 공지사항 확인',
             ],
         },
         {
@@ -254,7 +254,7 @@ export const hqProcess = {
             items: [
                 {
                     title: '본사 통합 대시보드',
-                    description: '전 가맹점의 핵심 성과 지표(KPI)를 실시간으로 비교 분석하여, 브랜드 전체의 현황을 한눈에 파악합니다.',
+                    description: '전 가맹점의 핵심 성과 지표(KPI)를 비교 분석하여, 브랜드 전체의 현황을 한눈에 파악합니다.',
                 },
                 {
                     title: '자동 요약 리포트',
@@ -284,7 +284,7 @@ export const storeFeatureComparison = [
             { name: 'POS 데이터 집계', values: ['✓', '✓', '✓', '✓', '✓'] },
             { name: '배달 플랫폼 매출 상세 집계', values: ['✗', '✗', '✓', '✓', '✓'] },
             { name: '네이버/메타 광고 데이터 연동', values: ['✗', '✗', '✓', '✓', '✓'] },
-            { name: 'AI 주간/월간 리포트', values: ['△', '✓', '✓', '✓', '✓'] },
+            { name: 'AI 주간 리포트', values: ['△', '✓', '✓', '✓', '✓'] },
             { name: '카카오톡 알림 및 리포트 전달', values: ['✗', '✗', '✓', '✓', '✓'] },
         ]
     },

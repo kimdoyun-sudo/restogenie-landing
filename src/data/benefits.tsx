@@ -16,7 +16,7 @@ export const storeBenefits: IBenefit[] = [
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
-                title: "실시간 채널별 성과 분석",
+                title: "채널별 성과 분석",
                 description: "데이터 기반 의사결정",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
@@ -35,7 +35,7 @@ export const storeBenefits: IBenefit[] = [
         badgeColor: "bg-indigo-100 text-indigo-800",
         bullets: [
             {
-                title: "주간/월간 자동 요약 리포트",
+                title: "주간 자동 요약 리포트",
                 description: "AI 기반 핵심 이슈 분석",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
@@ -54,7 +54,7 @@ export const storeBenefits: IBenefit[] = [
     },
     {
         title: "AI 챗봇",
-        description: "본사 매뉴얼, 레시피, 프로모션 공지를 AI가 학습합니다. \"신메뉴 레시피 알려줘\", \"오늘 마감 매출 얼마야?\" 텍스트로 물어보면 AI가 답변을 도와드립니다.",
+        description: "본사 매뉴얼, 레시피, 프로모션 공지를 AI가 학습합니다. \"신메뉴 레시피 알려줘\", \"오늘 마감 매출 얼마야?\" 채팅으로 물어보면 AI가 답변을 도와드립니다.",
         badge: "AI 비서",
         badgeColor: "bg-purple-100 text-purple-800",
         bullets: [
@@ -64,7 +64,7 @@ export const storeBenefits: IBenefit[] = [
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
-                title: "실시간 매장 데이터(매출, 재고) 조회",
+                title: "매장 데이터(매출, 재고) 조회",
                 description: "궁금한 정보를 빠르게 확인 가능",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
@@ -93,7 +93,7 @@ export const storeBenefits: IBenefit[] = [
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
-                title: "실시간 광고(ROAS) 채널별 분석",
+                title: "광고(ROAS) 채널별 분석",
                 description: "광고비 효율 분석",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
@@ -136,7 +136,7 @@ export const storeBenefits: IBenefit[] = [
         badgeColor: "bg-purple-100 text-purple-800",
         bullets: [
             {
-                title: "실시간 유동인구 분석",
+                title: "유동인구 분석",
                 description: "CCTV 기반 방문객 추적",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
@@ -164,7 +164,7 @@ export const hqBenefits: IBenefit[] = [
         badgeColor: "bg-indigo-100 text-indigo-800",
         bullets: [
             {
-                title: "전 가맹점 KPI 실시간 모니터링",
+                title: "전 가맹점 KPI 모니터링",
                 description: "매출, 재고, 고객만족도 통합 대시보드",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
@@ -188,7 +188,7 @@ export const hqBenefits: IBenefit[] = [
         badgeColor: "bg-blue-100 text-blue-800",
         bullets: [
             {
-                title: "주간/월간 자동 요약 리포트",
+                title: "주간 자동 요약 리포트",
                 description: "AI 기반 핵심 이슈 분석",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
@@ -213,7 +213,7 @@ export const hqBenefits: IBenefit[] = [
         bullets: [
             {
                 title: "본사 매뉴얼/레시피 자동 학습",
-                description: "전 가맹점 AI 챗봇에 실시간 반영",
+                description: "전 가맹점 AI 챗봇에 바로 반영",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
             {
@@ -236,7 +236,7 @@ export const hqBenefits: IBenefit[] = [
         badgeColor: "bg-red-100 text-red-800",
         bullets: [
             {
-                title: "본사 공지사항 실시간 전달",
+                title: "본사 공지사항 즉시 전달",
                 description: "전 가맹점 동시 알림",
                 icon: <FaCheck size={20} className="text-indigo-500" />
             },
